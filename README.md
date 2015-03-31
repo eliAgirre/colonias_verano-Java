@@ -1,2 +1,2 @@
-# Aplicación Java: Colonias de verano
+# Colonias de verano (Java)
 Gestionar las colonias de verano para monitores
