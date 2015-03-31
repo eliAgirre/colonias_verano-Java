@@ -1,0 +1,157 @@
+Evento   	Hora	                 DNI 	  Edad	Telefono	Grupo	  Monitor	Nombre	    Apellido1	   Apellido2
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Añadir   2014-04-01 14:52:07.455   63483180Y   5    943785263      A        NO      LEIRE        MARTIN       OTAEGI
+
+Editar   2014-04-01 14:52:30.187   63483180Y   5    943785263      A        NO      LEIRE        MARTIN       OTAEGUI
+
+Cargar   2014-04-01 14:52:43.409   09811114G   -    ---------      A        NO      MANEX        SANCHEZ       AGUILAR 
+
+Cargar   2014-04-01 14:52:43.412   16132432W   -    ---------      A        SI      JONE        UGARTE       GOROSTEGI
+
+Cargar   2014-04-01 14:52:43.413   19979598G   -    ---------      A        SI      AMAIA        ETXEBERRIA       ARAMBURU
+
+Cargar   2014-04-01 14:52:43.415   32021201A   -    ---------      A        SI      ANE        ZUBIA       GOENAGA
+
+Cargar   2014-04-01 14:52:43.416   34976778B   -    ---------      A        NO      IORITZ        ZABALETA       BASTIDA
+
+Cargar   2014-04-01 14:52:43.418   46541888P   -    ---------      A        NO      XABIER        MADINABEITIA       URRUTIA
+
+Cargar   2014-04-01 14:52:43.419   52203171W   -    ---------      A        NO      OHIANA        BARRENA       MORENO
+
+Cargar   2014-04-01 14:52:43.421   52352282G   -    ---------      A        NO      MADDI        CASTAÑEDA       ALEGRIA
+
+Cargar   2014-04-01 14:52:43.422   63483180Y   -    ---------      A        NO      LEIRE        MARTIN       OTAEGUI
+
+Cargar   2014-04-01 14:52:43.424   72483186C   -    ---------      A        SI      IKER        MADRIGAL       GOIBURU
+
+Cargar   2014-04-01 14:52:43.428   72483187K   -    ---------      A        NO      JOSUNE        UGARTE       IZAGIRRE
+
+Cargar   2014-04-01 14:52:43.43   76242608T   -    ---------      A        NO      OLATZ        EROSTARBE       PLAZAOLA
+
+Cargar   2014-04-01 14:53:11.369   03150497A   -    ---------      B        SI      ITZIAR        ZELAIA       OLARIAGA
+
+Cargar   2014-04-01 14:53:11.37   23150497P   -    ---------      B        SI      MARIA        LARRAÑAGA       GOÑI
+
+Cargar   2014-04-01 14:53:11.372   27460578G   -    ---------      B        SI      ISABEL        GARCIA       FERNANDEZ
+
+Cargar   2014-04-01 14:53:11.374   31619357S   -    ---------      B        SI      MAITANE        GUTIERREZ       ELKORO
+
+Cargar   2014-04-01 14:53:11.375   44031100S   -    ---------      B        NO      ZORIONE        APERRIBAY       AIASTUY
+
+Cargar   2014-04-01 14:53:11.376   51887981G   -    ---------      B        NO      IKER        PLAZAOLA       UNAMUNO
+
+Cargar   2014-04-01 14:53:11.378   72483181S   -    ---------      B        NO      AINTZANE        IZAGIRRE       LOMBIDE
+
+Borrar   2014-04-01 14:54:14.612   63483180Y                                          
+
+Añadir   2014-05-01 14:56:16.106   72483180Z   -    650438314      B        SI      NAIARA        ELGARRESTA       URZELAI
+
+Editar   2014-05-01 14:57:16.391   72483180Z   -    650438314      B        SI      NAIARA        ELGARRESTA       URZELAI
+
+Cargar   2014-05-01 14:57:32.13   03150497A   -    ---------      B        SI      ITZIAR        ZELAIA       OLARIAGA
+
+Cargar   2014-05-01 14:57:32.137   23150497P   -    ---------      B        SI      MARIA        LARRAÑAGA       GOÑI
+
+Cargar   2014-05-01 14:57:32.139   27460578G   -    ---------      B        SI      ISABEL        GARCIA       FERNANDEZ
+
+Cargar   2014-05-01 14:57:32.14   31619357S   -    ---------      B        SI      MAITANE        GUTIERREZ       ELKORO
+
+Cargar   2014-05-01 14:57:32.142   44031100S   -    ---------      B        NO      ZORIONE        APERRIBAY       AIASTUY
+
+Cargar   2014-05-01 14:57:32.144   51887981G   -    ---------      B        NO      IKER        PLAZAOLA       UNAMUNO
+
+Cargar   2014-05-01 14:57:32.146   72483180Z   -    ---------      B        SI      NAIARA        ELGARRESTA       URZELAI
+
+Cargar   2014-05-01 14:57:32.148   72483181S   -    ---------      B        NO      AINTZANE        IZAGIRRE       LOMBIDE
+
+Borrar   2014-05-01 14:57:48.172   72483180Z                                          
+
+Cargar   2014-04-17 20:22:04.055   09811114G   -    ---------      A        NO      MANEX        SANCHEZ       AGUILAR 
+
+Cargar   2014-04-17 20:22:04.057   16132432W   -    ---------      A        SI      JONE        UGARTE       GOROSTEGI
+
+Cargar   2014-04-17 20:22:04.058   19979598G   -    ---------      A        SI      AMAIA        ETXEBERRIA       ARAMBURU
+
+Cargar   2014-04-17 20:22:04.06   32021201A   -    ---------      A        SI      ANE        ZUBIA       GOENAGA
+
+Cargar   2014-04-17 20:22:04.061   34976778B   -    ---------      A        NO      IORITZ        ZABALETA       BASTIDA
+
+Cargar   2014-04-17 20:22:04.062   46541888P   -    ---------      A        NO      XABIER        MADINABEITIA       URRUTIA
+
+Cargar   2014-04-17 20:22:04.064   52203171W   -    ---------      A        NO      OHIANA        BARRENA       MORENO
+
+Cargar   2014-04-17 20:22:04.065   52352282G   -    ---------      A        NO      MADDI        CASTAÑEDA       ALEGRIA
+
+Cargar   2014-04-17 20:22:04.066   72483186C   -    ---------      A        SI      IKER        MADRIGAL       GOIBURU
+
+Cargar   2014-04-17 20:22:04.068   72483187K   -    ---------      A        NO      JOSUNE        UGARTE       IZAGIRRE
+
+Cargar   2014-04-17 20:22:04.069   76242608T   -    ---------      A        NO      OLATZ        EROSTARBE       PLAZAOLA
+
+Cargar   2015-03-31 23:10:41.084   09811114G   -    ---------      A        NO      MANEX        SANCHEZ       AGUILAR 
+
+Cargar   2015-03-31 23:10:41.084   16132432W   -    ---------      A        NO      JONE        UGARTE       GOROSTIDI
+
+Cargar   2015-03-31 23:10:41.084   19979598G   -    ---------      A        SI      AMAIA        ETXEBERRIA       ARAMBURU
+
+Cargar   2015-03-31 23:10:41.084   32021201A   -    ---------      A        SI      ANE        ZUBIA       GOENAGA
+
+Cargar   2015-03-31 23:10:41.094   46541888P   -    ---------      A        SI      XABIER        ZUBIA       URRUTIA
+
+Cargar   2015-03-31 23:10:41.094   52203171W   -    ---------      A        NO      OHIANA        BARRENA       MORENO
+
+Cargar   2015-03-31 23:10:41.094   52352282G   -    ---------      A        NO      MADDI        CASTAÑEDA       ALEGRIA
+
+Cargar   2015-03-31 23:10:41.094   72483180Z   -    ---------      A        NO      ANABEL        IZAGIRRE       LOMBIDE
+
+Cargar   2015-03-31 23:10:41.094   72483186C   -    ---------      A        SI      IKER        MADRIGAL       GOIBURU
+
+Cargar   2015-03-31 23:10:41.104   72483187K   -    ---------      A        NO      JOSUNE        UGARTE       IZAGIRRE
+
+Cargar   2015-03-31 23:10:41.104   76242608T   -    ---------      A        NO      OLATZ        EROSTARBE       PLAZAOLA
+
+Cargar   2015-03-31 23:12:16.356   09811114G   -    ---------      A        NO      MANEX        SANCHEZ       AGUILAR 
+
+Cargar   2015-03-31 23:12:16.356   16132432W   -    ---------      A        NO      JONE        UGARTE       GOROSTIDI
+
+Cargar   2015-03-31 23:12:16.356   19979598G   -    ---------      A        SI      AMAIA        ETXEBERRIA       ARAMBURU
+
+Cargar   2015-03-31 23:12:16.356   32021201A   -    ---------      A        SI      ANE        ZUBIA       GOENAGA
+
+Cargar   2015-03-31 23:12:16.356   46541888P   -    ---------      A        SI      XABIER        ZUBIA       URRUTIA
+
+Cargar   2015-03-31 23:12:16.356   52203171W   -    ---------      A        NO      OHIANA        BARRENA       MORENO
+
+Cargar   2015-03-31 23:12:16.366   52352282G   -    ---------      A        NO      MADDI        CASTAÑEDA       ALEGRIA
+
+Cargar   2015-03-31 23:12:16.366   72483180Z   -    ---------      A        NO      ANABEL        IZAGIRRE       LOMBIDE
+
+Cargar   2015-03-31 23:12:16.366   72483186C   -    ---------      A        SI      IKER        MADRIGAL       GOIBURU
+
+Cargar   2015-03-31 23:12:16.366   72483187K   -    ---------      A        NO      JOSUNE        UGARTE       IZAGIRRE
+
+Cargar   2015-03-31 23:12:16.366   76242608T   -    ---------      A        NO      OLATZ        EROSTARBE       PLAZAOLA
+
+Cargar   2015-03-31 23:15:00.626   09811114G   -    ---------      A        NO      MANEX        SANCHEZ       AGUILAR 
+
+Cargar   2015-03-31 23:15:00.626   16132432W   -    ---------      A        NO      JONE        UGARTE       GOROSTIDI
+
+Cargar   2015-03-31 23:15:00.626   19979598G   -    ---------      A        SI      AMAIA        ETXEBERRIA       ARAMBURU
+
+Cargar   2015-03-31 23:15:00.626   32021201A   -    ---------      A        SI      ANE        ZUBIA       GOENAGA
+
+Cargar   2015-03-31 23:15:00.626   46541888P   -    ---------      A        SI      XABIER        ZUBIA       URRUTIA
+
+Cargar   2015-03-31 23:15:00.626   52203171W   -    ---------      A        NO      OHIANA        BARRENA       MORENO
+
+Cargar   2015-03-31 23:15:00.636   52352282G   -    ---------      A        NO      MADDI        CASTAÑEDA       ALEGRIA
+
+Cargar   2015-03-31 23:15:00.636   72483180Z   -    ---------      A        NO      ANABEL        IZAGIRRE       LOMBIDE
+
+Cargar   2015-03-31 23:15:00.636   72483186C   -    ---------      A        SI      IKER        MADRIGAL       GOIBURU
+
+Cargar   2015-03-31 23:15:00.636   72483187K   -    ---------      A        NO      JOSUNE        UGARTE       IZAGIRRE
+
+Cargar   2015-03-31 23:15:00.636   76242608T   -    ---------      A        NO      OLATZ        EROSTARBE       PLAZAOLA
+
