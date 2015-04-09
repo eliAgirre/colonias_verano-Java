@@ -3,4 +3,4 @@
 La aplicación permite añadir, modificar y eliminar cada inscripción.
 <p align="justify">Primero se rellenan los datos de las matrículas en un tiempo determinado. Cuando la fecha de inscripción se cierra y una vez que los grupos hayan sido creados, se podrá editar los datos de cada persona y visualizar los grupos, constituidos por los niños y los monitores. </p>
 <p>Existe una opción extra en la que se puede editar y visualizar los juegos.</p>
-<a href="http://bit.ly/coloniasVerano" target="_blank"><img src="https://lh5.googleusercontent.com/0fWKYyQFNIpDh1vFSgfGUrXuAzVMqrnJHDQs_lysdOWV5pwIurt3zrAJ4PHPohavhQShKaQ0iZhu_TA=w1416-h665" title="ventana_principal" /></a>
+<a href="http://bit.ly/coloniasVerano" target="_blank">Vídeo de colonias de verano</a>
