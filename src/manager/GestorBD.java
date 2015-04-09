@@ -7,7 +7,7 @@ import javax.swing.*;
 import view.VentanaEntrada;
 
 /**
- * Contiene tres atributos est·ticos que hace referencia a la conexiÛn MYSQL, a la conexiÛn a la base de datos y a la conexiÛn a preparar con la base de datos.
+ * Contiene tres atributos est√°ticos que hace referencia a la conexi√≥n MYSQL, a la conexi√≥n a la base de datos y a la conexi√≥n a preparar con la base de datos.
  * 
  * @author EA
  * @since Mayo 12, 2014
@@ -25,28 +25,31 @@ public class GestorBD {
 	/**
      * Para conectarse al Driver y poder usar MySQL.
      * 
-     * @throws SQLException Contiene informaciÛn sobre un error de acceso a la base de datos.
+     * @throws SQLException Contiene informaci√≥n sobre un error de acceso a la base de datos.
      */
 	public static void conectar() throws SQLException {
         try {
         	Class.forName("org.gjt.mm.mysql.Driver"); //El driver
         	
-        	// ConexiÛn remoto
-        	conexionMYSQL= DriverManager.getConnection("jdbc:mysql://us-cdbr-aws-east-105.cleardb.net:3306/ad_033c9629217c759","bb76fcb43f807b", "6776566b");
+        	// Conexi√≥n remoto clearBD pivotal
+        	//conexionMYSQL= DriverManager.getConnection("jdbc:mysql://us-cdbr-aws-east-105.cleardb.net:3306/ad_033c9629217c759","bb76fcb43f807b", "6776566b");
+
+        	// Conexi√≥n remoto clearBD OpenShift
+        	conexionMYSQL= DriverManager.getConnection("jdbc:mysql://us-cdbr-iron-east-02.cleardb.net:3306/ad_06e9956b530c4e5","bb969dc3d1637d", "22d90619");
         	
  
         } catch (Exception e) {
         	
-        	//Aviso por JOptionPane cuando la conexiÛn no es posible realizarla.
+        	//Aviso por JOptionPane cuando la conexi√≥n no es posible realizarla.
         	JOptionPane.showMessageDialog(null, "Imposible realizar la conexion a BD.","Error ",JOptionPane.ERROR_MESSAGE);
         }
-    }  //cierre del mÈtodo conexiÛn con la mysql
+    }  //cierre del m√©todo conexi√≥n con la mysql
 
 	
 	 /**
-     * Establece la conexiÛn con la base de datos.
+     * Establece la conexi√≥n con la base de datos.
      *
-     * @return Statement Devuelve la conexiÛn con la base de datos
+     * @return Statement Devuelve la conexi√≥n con la base de datos
      */
 	public static Statement conexion() {
 		
@@ -56,19 +59,19 @@ public class GestorBD {
         	
         } catch (SQLException e) {
         	
-        	//Aviso por JOptionPane cuando la conexiÛn es incorrecta.
-        	JOptionPane.showMessageDialog(null, "ConexiÛn incorrecta.","Error ",JOptionPane.ERROR_MESSAGE);
+        	//Aviso por JOptionPane cuando la conexi√≥n es incorrecta.
+        	JOptionPane.showMessageDialog(null, "Conexi√≥n incorrecta.","Error ",JOptionPane.ERROR_MESSAGE);
         }
         
         return stmt;
        
-    }  //cierre del mÈtodo establecer la conexiÛn
+    }  //cierre del m√©todo establecer la conexi√≥n
 	
 	 /**
      * Cierra la consulta.
      *
      * @param rs Es el resultado de la consulta.
-     * @throws SQLException Contiene informaciÛn sobre un error de ResultSet
+     * @throws SQLException Contiene informaci√≥n sobre un error de ResultSet
      */
 	public static void cerrarConsulta(ResultSet rs) throws SQLException {
 		 
@@ -85,32 +88,32 @@ public class GestorBD {
             }
             
 	     }
-	} //cierre del mÈtodo cerrar resultSet
+	} //cierre del m√©todo cerrar resultSet
 		
 	 /**
-     * Cierra la conexiÛn con la MySQL.
+     * Cierra la conexi√≥n con la MySQL.
      *
-     * @throws SQLException Contiene informaciÛn sobre un error del cierre de conexiÛn.
+     * @throws SQLException Contiene informaci√≥n sobre un error del cierre de conexi√≥n.
      */
 	 public static void cerrar() throws SQLException {
 
         try{
         	
-        	 conexionMYSQL.close(); //cerrar la conexiÛn MySQL.
+        	 conexionMYSQL.close(); //cerrar la conexi√≥n MySQL.
         	 
         }catch(Exception e){
 
-        	//Aviso por JOptionPane cuando no se ha podido cerrar la conexiÛn con la MySQL.
+        	//Aviso por JOptionPane cuando no se ha podido cerrar la conexi√≥n con la MySQL.
     		JOptionPane.showMessageDialog(null, "Mal al cerrar la conexion","Error ",JOptionPane.ERROR_MESSAGE);
         }
-	 } //cierre del mÈtodo cerrar mysql
+	 } //cierre del m√©todo cerrar mysql
 	 
 	 /**
 	   * Sirve para realizar consultas del tipo: SELECT * FROM tabla WHERE..."
 	   *
-	   * @param stmt Sirve para la conexiÛn con la base de datos
+	   * @param stmt Sirve para la conexi√≥n con la base de datos
 	   * @param cadena La consulta en concreto.
-	   * @throws SQLException Contiene informaciÛn sobre un error con la sentencia SQL.
+	   * @throws SQLException Contiene informaci√≥n sobre un error con la sentencia SQL.
 	   * @return ResultSet Devuelve el resultado de la consulta realizada.
 	   */
 	 public static ResultSet consulta(Statement stmt,String cadena) throws SQLException {
@@ -119,12 +122,12 @@ public class GestorBD {
 		 
 		 try {
 			 
-	 		stmt = conexionMYSQL.prepareStatement(cadena); //Se establece la conexiÛn con la MySQL pasando como par·metro una sentencia de sql.
+	 		stmt = conexionMYSQL.prepareStatement(cadena); //Se establece la conexi√≥n con la MySQL pasando como par√°metro una sentencia de sql.
             rs = stmt.executeQuery(cadena); //Establece el valor del ResultSet ejecutando la consulta dependiendo de la sql. 
             
 		 }catch (SQLException sql) {
 			 
-			//Aviso por JOptionPane cuando la cadena no est· escrita adecuadamente.
+			//Aviso por JOptionPane cuando la cadena no est√° escrita adecuadamente.
 			JOptionPane.showMessageDialog(null, "Error con: " + cadena,"Error ",JOptionPane.ERROR_MESSAGE);
 			
 			//Aviso por JOptionPane cuando se he producido un error de SQL.
@@ -133,10 +136,10 @@ public class GestorBD {
 		 
 		 return rs; //devuelve el valor del ResultSet
 		 
-	 }//cierre del mÈtodo consulta
+	 }//cierre del m√©todo consulta
 	 
 	 /**
-     * Realiza las consultas de actualizaciÛn o inserciÛn. No retorna nada pero si la cadena no es adecuada el resultado es -1.
+     * Realiza las consultas de actualizaci√≥n o inserci√≥n. No retorna nada pero si la cadena no es adecuada el resultado es -1.
      *
      * @param cadena La consulta en concreto
      */
@@ -151,14 +154,14 @@ public class GestorBD {
 	            
 	        }catch (SQLException sql) {
 	        	
-	        	//Aviso por JOptionPane cuando la cadena no est· escrita adecuadamente.
+	        	//Aviso por JOptionPane cuando la cadena no est√° escrita adecuadamente.
 	        	JOptionPane.showMessageDialog(null, "Error con: " + cadena,"Error ",JOptionPane.ERROR_MESSAGE);
 	        	
 	        	//Aviso por JOptionPane cuando se he producido un error de SQL.
 	            JOptionPane.showMessageDialog(null, "SQLException: " + sql.getMessage(),"SQL ",JOptionPane.ERROR_MESSAGE);
 	        }
 	      
-	 } //cierre del mÈtodo actualizaciÛn
+	 } //cierre del m√©todo actualizaci√≥n
 	 
 	/**
      * Elimina los datos de la base de datos.
@@ -170,20 +173,20 @@ public class GestorBD {
 		 
 		 try {
 		 	
-			ps=conexionMYSQL.prepareStatement(cadena); //Prepara la conexiÛn con la base de datos pasando como par·metro la cadena sql.
-			ps.setString(1, campo); //establecemos el n˙mero de del campo de la tabla matriculas o monitores y el par·metro de dato.
-		 	ps.executeUpdate(); //Actualiza la ejecuciÛn
+			ps=conexionMYSQL.prepareStatement(cadena); //Prepara la conexi√≥n con la base de datos pasando como par√°metro la cadena sql.
+			ps.setString(1, campo); //establecemos el n√∫mero de del campo de la tabla matriculas o monitores y el par√°metro de dato.
+		 	ps.executeUpdate(); //Actualiza la ejecuci√≥n
 		 		
 		 } catch (SQLException sql) {
 			 
-			//Aviso por JOptionPane cuando la cadena no est· escrita adecuadamente.
+			//Aviso por JOptionPane cuando la cadena no est√° escrita adecuadamente.
 			JOptionPane.showMessageDialog(null, "Error con: " + cadena,"Error ",JOptionPane.ERROR_MESSAGE);
 			 
 			//Aviso por JOptionPane cuando se he producido un error de SQL.
 	        JOptionPane.showMessageDialog(null, "SQLException: " + sql.getMessage(),"SQL ",JOptionPane.ERROR_MESSAGE);
 	           	
 	     }
-	 } //cierre del mÈtodo eliminar
+	 } //cierre del m√©todo eliminar
 	 
 	/**
      * Elimina los datos de la base de datos.
@@ -195,20 +198,20 @@ public class GestorBD {
 		 
 		 try {
 		 	
-			ps=conexionMYSQL.prepareStatement(cadena); //Prepara la conexiÛn con la base de datos pasando como par·metro la cadena sql.
-			ps.setInt(1, id); //establecemos el n˙mero de del campo de la tabla juegos y el par·metro de dato.
-		 	ps.executeUpdate(); //Actualiza la ejecuciÛn
+			ps=conexionMYSQL.prepareStatement(cadena); //Prepara la conexi√≥n con la base de datos pasando como par√°metro la cadena sql.
+			ps.setInt(1, id); //establecemos el n√∫mero de del campo de la tabla juegos y el par√°metro de dato.
+		 	ps.executeUpdate(); //Actualiza la ejecuci√≥n
 		 		
 		 } catch (SQLException sql) {
 			 
-			//Aviso por JOptionPane cuando la cadena no est· escrita adecuadamente.
+			//Aviso por JOptionPane cuando la cadena no est√° escrita adecuadamente.
 			JOptionPane.showMessageDialog(null, "Error con: " + cadena,"Error ",JOptionPane.ERROR_MESSAGE);
 			 
 			//Aviso por JOptionPane cuando se he producido un error de SQL.
 	        JOptionPane.showMessageDialog(null, "SQLException: " + sql.getMessage(),"SQL ",JOptionPane.ERROR_MESSAGE);
 	           	
 	     }
-	 } //cierre del mÈtodo eliminar
+	 } //cierre del m√©todo eliminar
 	 
 	 /**
      * Elimina los datos de la base de datos.
@@ -219,18 +222,18 @@ public class GestorBD {
 		 
 		 try {
 		 	
-			ps=conexionMYSQL.prepareStatement(cadena); //Prepara la conexiÛn con la base de datos pasando como par·metro la cadena sql.
-		 	ps.executeUpdate(); //Actualiza la ejecuciÛn
+			ps=conexionMYSQL.prepareStatement(cadena); //Prepara la conexi√≥n con la base de datos pasando como par√°metro la cadena sql.
+		 	ps.executeUpdate(); //Actualiza la ejecuci√≥n
 		 		
 		 } catch (SQLException sql) {
 			 
-			//Aviso por JOptionPane cuando la cadena no est· escrita adecuadamente.
+			//Aviso por JOptionPane cuando la cadena no est√° escrita adecuadamente.
 			JOptionPane.showMessageDialog(null, "Error con: " + cadena,"Error ",JOptionPane.ERROR_MESSAGE);
 			 
 			//Aviso por JOptionPane cuando se he producido un error de SQL.
 	        JOptionPane.showMessageDialog(null, "SQLException: " + sql.getMessage(),"SQL ",JOptionPane.ERROR_MESSAGE);
 	           	
 	     }
-	 } //cierre del mÈtodo eliminar
+	 } //cierre del m√©todo eliminar
 
 } //cierre de la clase
