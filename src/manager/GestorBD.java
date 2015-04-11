@@ -31,11 +31,11 @@ public class GestorBD {
         try {
         	Class.forName("org.gjt.mm.mysql.Driver"); //El driver
         	
-        	// Conexión remoto clearBD pivotal
+        	// Conexión remoto clearBD MySQL pivotal
         	//conexionMYSQL= DriverManager.getConnection("jdbc:mysql://us-cdbr-aws-east-105.cleardb.net:3306/ad_033c9629217c759","bb76fcb43f807b", "6776566b");
 
-        	// Conexión remoto clearBD OpenShift
-        	conexionMYSQL= DriverManager.getConnection("jdbc:mysql://us-cdbr-iron-east-02.cleardb.net:3306/ad_06e9956b530c4e5","bb969dc3d1637d", "22d90619");
+        	// Conexión remoto clearBD MySQL OpenShift
+        	conexionMYSQL= DriverManager.getConnection("jdbc:mysql://us-cdbr-iron-east-02.cleardb.net:3306/ad_15583adf16d2d86","b3905f855460a9","9fdb9c4f");
         	
  
         } catch (Exception e) {
